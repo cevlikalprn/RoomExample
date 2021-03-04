@@ -35,7 +35,7 @@ class BookAdapter(var bookList: ArrayList<Book>): RecyclerView.Adapter<BookAdapt
         bookName.text = bookList[position].bookName
         authorName.text = bookList[position].authorName
         row.text = (position +1).toString()
-        0
+        
         holder.itemView.setOnClickListener {
             val intent = Intent(holder.itemView.context, UpdateAndDeleteActivity::class.java)
             intent.putExtra("book_name", bookList[position].bookName)
